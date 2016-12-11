@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		633937A81DFD488700EF83C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633937A71DFD488700EF83C1 /* main.m */; };
 		633937AB1DFD488700EF83C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633937AA1DFD488700EF83C1 /* AppDelegate.m */; };
-		633937AE1DFD488700EF83C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633937AD1DFD488700EF83C1 /* ViewController.m */; };
 		633937B11DFD488700EF83C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633937AF1DFD488700EF83C1 /* Main.storyboard */; };
 		633937B31DFD488700EF83C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633937B21DFD488700EF83C1 /* Assets.xcassets */; };
 		633937B61DFD488700EF83C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633937B41DFD488700EF83C1 /* LaunchScreen.storyboard */; };
+		633937C51DFD4A6700EF83C1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633937C41DFD4A6700EF83C1 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		633937A71DFD488700EF83C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		633937A91DFD488700EF83C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		633937AA1DFD488700EF83C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		633937AC1DFD488700EF83C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		633937AD1DFD488700EF83C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		633937B01DFD488700EF83C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633937B21DFD488700EF83C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633937B51DFD488700EF83C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		633937B71DFD488700EF83C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633937C31DFD4A6700EF83C1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		633937C41DFD4A6700EF83C1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +58,10 @@
 		633937A51DFD488700EF83C1 /* WDTimeCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				633937BD1DFD4A4500EF83C1 /* SCR */,
+				633937C21DFD4A4500EF83C1 /* Sources */,
 				633937A91DFD488700EF83C1 /* AppDelegate.h */,
 				633937AA1DFD488700EF83C1 /* AppDelegate.m */,
-				633937AC1DFD488700EF83C1 /* ViewController.h */,
-				633937AD1DFD488700EF83C1 /* ViewController.m */,
-				633937AF1DFD488700EF83C1 /* Main.storyboard */,
-				633937B21DFD488700EF83C1 /* Assets.xcassets */,
-				633937B41DFD488700EF83C1 /* LaunchScreen.storyboard */,
-				633937B71DFD488700EF83C1 /* Info.plist */,
 				633937A61DFD488700EF83C1 /* Supporting Files */,
 			);
 			path = WDTimeCalculator;
@@ -74,9 +70,61 @@
 		633937A61DFD488700EF83C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				633937AF1DFD488700EF83C1 /* Main.storyboard */,
+				633937B21DFD488700EF83C1 /* Assets.xcassets */,
+				633937B41DFD488700EF83C1 /* LaunchScreen.storyboard */,
+				633937B71DFD488700EF83C1 /* Info.plist */,
 				633937A71DFD488700EF83C1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		633937BD1DFD4A4500EF83C1 /* SCR */ = {
+			isa = PBXGroup;
+			children = (
+				633937BE1DFD4A4500EF83C1 /* Home */,
+			);
+			path = SCR;
+			sourceTree = "<group>";
+		};
+		633937BE1DFD4A4500EF83C1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				633937BF1DFD4A4500EF83C1 /* Controller */,
+				633937C01DFD4A4500EF83C1 /* Model */,
+				633937C11DFD4A4500EF83C1 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		633937BF1DFD4A4500EF83C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				633937C31DFD4A6700EF83C1 /* HomeViewController.h */,
+				633937C41DFD4A6700EF83C1 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		633937C01DFD4A4500EF83C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		633937C11DFD4A4500EF83C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		633937C21DFD4A4500EF83C1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633937AE1DFD488700EF83C1 /* ViewController.m in Sources */,
 				633937AB1DFD488700EF83C1 /* AppDelegate.m in Sources */,
 				633937A81DFD488700EF83C1 /* main.m in Sources */,
+				633937C51DFD4A6700EF83C1 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33JZ8ZWGJN;
 				INFOPLIST_FILE = WDTimeCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.houmanager.WDTimeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33JZ8ZWGJN;
 				INFOPLIST_FILE = WDTimeCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.houmanager.WDTimeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
