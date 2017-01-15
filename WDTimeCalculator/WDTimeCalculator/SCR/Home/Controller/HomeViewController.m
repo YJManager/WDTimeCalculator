@@ -326,5 +326,4 @@ static CGFloat const leftMargin = 10.0f;
     return string;
 }
 
-
 @end
